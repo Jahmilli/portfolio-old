@@ -1,10 +1,10 @@
 import React from 'react';
 import Home from './components/pages/Home';
 import Blog from "./components/pages/Blog";
-import Resume from './components/pages/Resume';
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import styles from "./App.module.css";
+import Articles from './components/pages/Articles';
 
 const App: React.FC = () => {
   const [activeKey, setActiveKey] = React.useState("");
@@ -69,10 +69,10 @@ const App: React.FC = () => {
     <div className={styles.app}>
       <Home handleSetActive={handleSetActive} />
       <div className={classes.top}>
-        <Blog position="top" handleSetInactive={handleSetInactive} />
+        <Articles position="top" handleSetInactive={handleSetInactive} />
       </div>
       <div className={classes.right}>
-        <Resume position="right" handleSetInactive={handleSetInactive} />
+        <Blog position="right" handleSetInactive={handleSetInactive} />
       </div>
       <div className={classes.bottom}>
         <About position="bottom" handleSetInactive={handleSetInactive} />

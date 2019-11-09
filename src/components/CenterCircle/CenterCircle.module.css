@@ -1,16 +1,16 @@
 .outerCircle {
-    width: 35em;
+    /* width: 35em;
     height: 35em;
     border: 10px dashed white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     /* transform: rotate(360d); */
 }
 
 
-@-webkit-keyframes rotating /* Safari and Chrome */ {
+/* @-webkit-keyframes rotating {
     from {
       -webkit-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -40,7 +40,7 @@
   }
 
 
-  @-webkit-keyframes inverseRotating /* Safari and Chrome */ {
+  @-webkit-keyframes inverseRotating {
     from {
       -webkit-transform: rotate(0deg);
       -o-transform: rotate(0deg);
@@ -67,88 +67,93 @@
       -o-transform: rotate(-360deg);
       transform: rotate(-360deg);
     }
-  }
-  .outerCircle {
+  } */
+  
+  /* .outerCircle {
     composes: outerCircle;
     -webkit-animation: rotating 20s linear infinite;
     -moz-animation: rotating 20s linear infinite;
     -ms-animation: rotating 20s linear infinite;
     -o-animation: rotating 20s linear infinite;
     animation: rotating 20s linear infinite;
-  }
+  } */
 
 .centerCircleLockup {
-    background: #fff;
-    width: 30em;
-    height: 30em;
-    border-radius: 50%;
-    box-shadow: 0 5px 10px 2px;
-    padding: 20px;
-    text-align: center;
-    pointer-events: auto; /* Because we're using a modal */
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-    align-items: center;
-    justify-items: center;
-    -webkit-animation: inverseRotating 20s linear infinite;
+  background: #fff;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 2px;
+  padding: 20px;
+  text-align: center;
+  pointer-events: auto; /* Because we're using a modal */
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  align-items: center;
+  justify-items: center;
+    
+    /* -webkit-animation: inverseRotating 20s linear infinite;
     -moz-animation: inverseRotating 20s linear infinite;
     -ms-animation: inverseRotating 20s linear infinite;
     -o-animation: inverseRotating 20s linear infinite;
-    animation: inverseRotating 20s linear infinite
+    animation: inverseRotating 20s linear infinite */
 }
 
 .logoLockup {
-    grid-column-start: 2;
-    grid-row-start: 2;
+  grid-column-start: 2;
+  grid-row-start: 2;
 }
 
 .centerCircleLockup h1 {
-    margin: 0;
-    font-family: sans-serif;
+  margin: 0;
+  font-family: sans-serif;
 }
 
 .centerCircleLockup p {
-    font-size: 24px;
-    margin: 0;
+  font-size: 24px;
+  margin: 0;
 }
 .centerCircleLockup img {
-    height: 2em;
-    width: 2em;
+  height: 2em;
+  width: 2em;
+  transition: transform 0.5s;
+  transform: scale(1);
 }
 .centerCircleLockup img:hover {
-    cursor: pointer;
+  cursor: pointer;
+  transform: scale(1.5);
 }
 
 .top {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .right {
-    grid-column-start: 3;
-    grid-row-start: 2;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .bottom {
-    grid-column-start: 2;
-    grid-row-start: 3;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .left {
-    grid-column-start: 1;
-    grid-row-start: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

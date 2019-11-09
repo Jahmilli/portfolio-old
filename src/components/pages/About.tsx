@@ -15,13 +15,13 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
             <div>
                 <h2>Who am I?</h2>
                 <p>
-                    I am currently a full-time student and software engineer based in Sydney. I have a strong interest in continuing to learn new things particularly around
-                    all areas of Information Technology and this has only been growing.
+                    I am a full-time student and software engineer based in Sydney. I have a strong interest in learning all types of skills particularly in 
+                    all areas of Information Technology.
                     <br /><br />
-                    My biggest interests right now revolve around full-stack development but I really enjoy using React, Typescript as well as Java. I'm also extremely interested 
-                    in devops although my ideas of it are quite conflicting (Is it a role, is it a mindset, what is it!?). Anyway, some concepts drawn from devops such as 
-                    Continuous Integration and Continuous Deployment (CICD) are fascinating and I have really enjoyed working on building pipelines to enable faster and more 
-                    efficient software development.
+                    My biggest interests right now revolve around full-stack development and I really enjoy using React, Typescript as well as Java. I'm also extremely interested 
+                    in devops. I find concepts drawn from devops such as Continuous Integration and Continuous Deployment (CICD) are fascinating and I have really enjoyed working 
+                    on building pipelines to enable faster and more 
+efficient software development.
                     <br /><br />
                     Other things I am trying to get more active with include learning the piano and going to the gym. Hopefully at some point i'll begin cooking and learn a new
                     language but I can only be so hopeful.
@@ -49,10 +49,6 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
                     I also learned how to work with a development team understanding basics in enabling more efficient development practices. This also exposed 
                     me to working in a production environment, including developing release plans to take my team's applications to production, being "on-call" 
                     for production incidents, supporting a disaster recover exercise as well as overall development of applications and services that I took to production. 
-                </p>
-                <p>
-                    I love software development as it provides an incomparible ability to create and I want to continue developing my skills with the goal 
-                    of having a meaningful impact on the world.
                 </p>
             </div>
 

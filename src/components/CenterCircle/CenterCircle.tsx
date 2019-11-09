@@ -5,7 +5,6 @@ import DownChevron from "../../images/down-chevron.svg";
 import UpChevron from "../../images/up-chevron.svg";
 import LeftChevron from "../../images/left-chevron.svg";
 import RightChevron from "../../images/right-chevron.svg";
-import Logo from "../../images/ss-logo.png";
 
 type CenterCircleProps = {
     handleSetActive: Function;
@@ -21,10 +20,10 @@ const CenterCircle: React.FunctionComponent<CenterCircleProps> = ({ handleSetAct
                 </div>
                 <div className={styles.top}>
                     <img src={UpChevron} onClick={() => handleSetActive("top")} alt="Up Chevron" />
-                    <p>Blog</p>
+                    <p>Articles</p>
                 </div>
                 <div className={styles.right}>
-                    <p>Resume </p>
+                    <p>Blog</p>
                     <img src={RightChevron} onClick={() => handleSetActive("right")} alt="Right Chevron" />
                 </div>
                 <div className={styles.bottom}>
