@@ -17,7 +17,6 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     const handleKeyDown = (event: any) => {
-      console.log('event key is ', event.key);
       // Used to naviage back to home page on Escape
       if (event.key === "Escape" && activeKey) {
         handleSetInactive(activeKey);
