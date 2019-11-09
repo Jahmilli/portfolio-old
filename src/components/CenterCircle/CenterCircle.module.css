@@ -1,0 +1,62 @@
+.centerCircleLockup {
+    background: #fff;
+    width: 27em;
+    height: 27em;
+    border-radius: 50%;
+    box-shadow: 0 5px 10px 2px;
+    padding: 20px;
+    text-align: center;
+    pointer-events: auto; /* Because we're using a modal */
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    align-items: center;
+    justify-items: center;
+}
+
+.centerCircleLockup h1 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.centerCircleLockup p {
+    font-size: 24px;
+    margin: 0;
+}
+.centerCircleLockup img {
+    height: 2em;
+    width: 2em;
+}
+
+.top {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.right {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottom {
+    grid-column-start: 2;
+    grid-row-start: 3;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
