@@ -1,5 +1,7 @@
 
 import React from 'react';
+import styles from "./Pages.module.css";
+import Title from '../presentational/Title/Title';
 
 type ResumeProps = {
     position: string;
@@ -8,9 +10,8 @@ type ResumeProps = {
 
 const Resume: React.FunctionComponent<ResumeProps> = ({ position, handleSetInactive }) => {
     return (
-        <div style={{ height: '100%' }}>
-            <h1>Resume</h1>
-            <button onClick={() => handleSetInactive(position)}>Close</button>
+        <div className={styles.lockup}>
+            <Title title="Resume" position={position} handleSetInactive={handleSetInactive} />
         </div>
     );
 }

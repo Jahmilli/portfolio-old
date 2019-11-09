@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from "./Pages.module.css";
+import Title from '../presentational/Title/Title';
 
 type ContactProps = {
     position: string;
@@ -7,9 +9,8 @@ type ContactProps = {
 
 const Contact: React.FunctionComponent<ContactProps> = ({ position, handleSetInactive }) => {
     return (
-        <div style={{ height: '100%' }}>
-            <h1>Contact</h1>
-            <button onClick={() => handleSetInactive(position)}>Close</button>
+        <div className={styles.lockup}>
+            <Title title="Contact" position={position} handleSetInactive={handleSetInactive} />
         </div>
     );
 }

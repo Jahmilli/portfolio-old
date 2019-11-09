@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from "./Pages.module.css";
+import Title from '../presentational/Title/Title';
 
 type BlogProps = {
     position: string;
@@ -7,9 +9,8 @@ type BlogProps = {
 
 const Blog: React.FunctionComponent<BlogProps> = ({ position, handleSetInactive }) => {
     return (
-        <div style={{ height: '100%' }}>
-            <h1>Blog</h1>
-            <button onClick={() => handleSetInactive(position)}>Close</button>
+        <div className={styles.lockup}>
+            <Title title="Blog" position={position} handleSetInactive={handleSetInactive} />
         </div>
     );
 }

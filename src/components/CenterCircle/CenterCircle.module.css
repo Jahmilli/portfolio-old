@@ -27,6 +27,9 @@
     height: 2em;
     width: 2em;
 }
+.centerCircleLockup img:hover {
+    cursor: pointer;
+}
 
 .top {
     grid-column-start: 2;

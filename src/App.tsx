@@ -17,9 +17,22 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     const handleKeyDown = (event: any) => {
+      console.log('event key is ', event.key);
       // Used to naviage back to home page on Escape
       if (event.key === "Escape" && activeKey) {
         handleSetInactive(activeKey);
+      }
+      if (event.key === "ArrowUp" && !activeKey) {
+        handleSetActive("top");
+      }
+      if (event.key === "ArrowRight" && !activeKey) {
+        handleSetActive("right");
+      }
+      if (event.key === "ArrowDown" && !activeKey) {
+        handleSetActive("bottom");
+      }
+      if (event.key === "ArrowLeft" && !activeKey) {
+        handleSetActive("left");
       }
     };
     window.addEventListener("keydown", handleKeyDown);
