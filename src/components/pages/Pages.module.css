@@ -1,0 +1,6 @@
+.homePage {
+    height: 100%;
+    width: 100vw;
+    background-size: cover;
+    background-image: url("../../images/SeasideCliff.jpg");
+}

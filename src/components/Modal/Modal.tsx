@@ -10,7 +10,7 @@ const Modal: React.FunctionComponent<ModalProps> = ({ children }) => {
 
   // Faded background generic to all modals. NOTE: Because of this, you  need to set `pointer-events: auto;` in your modal to allow click events
   const styles =
-    'height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; pointer-events: none;';
+    'position: absolute; top: 0; left: 0; height: 100vh; width: 100%; display: flex; align-items: center; justify-content: center; pointer-events: none;';
   element.setAttribute('style', styles);
 
   React.useEffect(() => {

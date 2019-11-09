@@ -6,24 +6,28 @@ import UpChevron from "../../images/up-chevron.svg";
 import LeftChevron from "../../images/left-chevron.svg";
 import RightChevron from "../../images/right-chevron.svg";
 
-const CenterCircle: React.FunctionComponent = () => {
+type CenterCircleProps = {
+    handleSetActive: Function;
+}
+
+const CenterCircle: React.FunctionComponent<CenterCircleProps> = ({ handleSetActive }) => {
     return (
         <div className={styles.centerCircleLockup}>
             <h1>Sebastian Southern</h1>
             <div className={styles.top}>
-                <img src={UpChevron} alt="Up Chevron" />
+                <img src={UpChevron} onClick={() => handleSetActive("top")} alt="Up Chevron" />
                 <p>Blog</p>
             </div>
             <div className={styles.right}>
                 <p>Resume </p>
-                <img src={RightChevron} alt="Right Chevron" />
+                <img src={RightChevron} onClick={() => handleSetActive("right")} alt="Right Chevron" />
             </div>
             <div className={styles.bottom}>
                 <p>About</p>
-                <img src={DownChevron} alt="Down Chevron" />
+                <img src={DownChevron} onClick={() => handleSetActive("bottom")} alt="Down Chevron" />
             </div>
             <div className={styles.left}>
-                <img src={LeftChevron} alt="Left Chevron" />
+                <img src={LeftChevron} onClick={() => handleSetActive("left")} alt="Left Chevron" />
                 <p>Contact </p>
             </div>
         </div>
