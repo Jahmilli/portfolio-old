@@ -7,12 +7,24 @@ import Contact from './components/pages/Contact';
 import styles from "./App.module.css";
 
 const App: React.FC = () => {
+  const [activeKey, setActiveKey] = React.useState("");
   const [classes, setClasses] = React.useState({
     top: styles.topPage,
     right: styles.rightPage,
     bottom: styles.bottomPage,
     left: styles.leftPage,
   });
+
+  React.useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      // Used to naviage back to home page on Escape
+      if (event.key === "Escape" && activeKey) {
+        handleSetInactive(activeKey);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeKey]);
 
   const getStyle = (name: string, active: boolean) => {
     switch(name) {
@@ -24,20 +36,21 @@ const App: React.FC = () => {
   }
 
   const handleSetActive = (name: string) => {
-    const newStyle = getStyle(name, true);
     setClasses({
       ...classes,
-      [name]: newStyle
+      [name]: getStyle(name, true)
     });
+    console.log('setting active', name);
+    setActiveKey(name);
   }
 
   const handleSetInactive = (name: string) => {
-    const newStyle = getStyle(name, false);
-    console.log('inactive called, newstyle is ', newStyle);
+    console.log('called setinactive');
     setClasses({
       ...classes,
-      [name]: newStyle
+      [name]: getStyle(name, false)
     });
+    setActiveKey("");
   }
 
   return (
