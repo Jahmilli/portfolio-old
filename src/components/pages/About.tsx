@@ -23,8 +23,8 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
                     Continuous Integration and Continuous Deployment (CICD) are fascinating and I have really enjoyed working on building pipelines to enable faster and more 
                     efficient software development.
                     <br /><br />
-                    Other things I am trying to get more active with include learning the piano, going to the gym, and hopefully at some point i'll beging cooking and learning a new
-                    language (but I can only be so hopeful).
+                    Other things I am trying to get more active with include learning the piano and going to the gym. Hopefully at some point i'll begin cooking and learn a new
+                    language but I can only be so hopeful.
                 </p>
                 <h2>My Time at the Univeristy of Technology Sydney (UTS)</h2>
                 <p>
