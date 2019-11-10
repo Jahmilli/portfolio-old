@@ -82,3 +82,39 @@
   justify-content: space-between;
   align-items: center;
 }
+
+
+@media screen and (max-width: 550px) {
+
+  .centerCircleLockup {
+    width: 20em;
+    height: 20em;
+  }
+  .centerCircleLockup h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .centerCircleLockup p {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .centerCircleLockup {
+    width: 15em;
+    height: 15em;
+  }
+  .centerCircleLockup h1 {
+    font-size: 16px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .centerCircleLockup p {
+    font-size: 12px;
+  }
+  /* .centerCircleLockup */
+}
