@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.55c38505.chunk.css",
+    "main.js": "/portfolio/static/js/main.e23c845b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e23c845b.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.36963274.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.36963274.js.map",
+    "static/js/2.cd574c5b.chunk.js": "/portfolio/static/js/2.cd574c5b.chunk.js",
+    "static/js/2.cd574c5b.chunk.js.map": "/portfolio/static/js/2.cd574c5b.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.fa1be36f9df88d1bdb91b9958bc145e9.js": "/portfolio/precache-manifest.fa1be36f9df88d1bdb91b9958bc145e9.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.55c38505.chunk.css.map": "/portfolio/static/css/main.55c38505.chunk.css.map",
+    "static/media/Pages.module.css": "/portfolio/static/media/SeasideCliff.92c41010.jpg",
+    "static/media/close.svg": "/portfolio/static/media/close.0e00f3f4.svg",
+    "static/media/down-chevron.svg": "/portfolio/static/media/down-chevron.4785ffc8.svg",
+    "static/media/github-logo.svg": "/portfolio/static/media/github-logo.76d344f0.svg",
+    "static/media/left-chevron.svg": "/portfolio/static/media/left-chevron.2a814080.svg",
+    "static/media/linkedin-logo.svg": "/portfolio/static/media/linkedin-logo.3e2de65d.svg",
+    "static/media/right-chevron.svg": "/portfolio/static/media/right-chevron.730e2e12.svg",
+    "static/media/up-chevron.svg": "/portfolio/static/media/up-chevron.3923b9cc.svg"
+  }
+}
