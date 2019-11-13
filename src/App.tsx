@@ -1,6 +1,6 @@
 import React from 'react';
 import Home from './components/pages/Home';
-import Blog from "./components/pages/Blog";
+import Blog from "./components/pages/Blog/Blog";
 import About from './components/pages/About';
 import Contact from './components/pages/Contact';
 import styles from "./App.module.css";
@@ -52,12 +52,11 @@ const App: React.FC = () => {
       ...classes,
       [name]: getStyle(name, true)
     });
-    console.log('setting active', name);
+    console.log('setting active', name)
     setActiveKey(name);
   }
 
   const handleSetInactive = (name: string) => {
-    console.log('called setinactive');
     setClasses({
       ...classes,
       [name]: getStyle(name, false)

@@ -1,7 +1,7 @@
 import React from 'react';
 import Particles from "react-particles-js";
 import Modal from '../Modal/Modal';
-import CenterCircle from '../CenterCircle/CenterCircle';
+import CenterCircle from '../presentational/CenterCircle/CenterCircle';
 import styles from "./Pages.module.css";
 
 type HomeProps = {

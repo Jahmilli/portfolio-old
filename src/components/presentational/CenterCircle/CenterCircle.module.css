@@ -9,6 +9,16 @@
     /* transform: rotate(360d); */
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
 .centerCircleLockup {
   background: #fff;
   width: 30em;
@@ -32,7 +42,10 @@
 
 .centerCircleLockup h1 {
   margin: 0;
+  opacity: 0;
   font-family: sans-serif;
+  animation: fadeIn 1s ease-in 0s;
+  animation-fill-mode: forwards
 }
 
 .centerCircleLockup p {
@@ -51,36 +64,48 @@
 }
 
 .top {
+  opacity: 0;
   grid-column-start: 2;
   grid-row-start: 1;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s ease-in 1s;
+  animation-fill-mode: forwards; 
 }
 
 .right {
+  opacity: 0;
   grid-column-start: 3;
   grid-row-start: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  animation: fadeIn 0.5s ease-in 1.25s;
+  animation-fill-mode: forwards; 
 }
 
 .bottom {
+  opacity: 0;
   grid-column-start: 2;
   grid-row-start: 3;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+  animation: fadeIn 0.5s ease-in 1.5s;
+  animation-fill-mode: forwards; 
 }
 
 .left {
+  opacity: 0;
   grid-column-start: 1;
   grid-row-start: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  animation: fadeIn 0.5s ease-in 1.75s;
+  animation-fill-mode: forwards; 
 }
 
 

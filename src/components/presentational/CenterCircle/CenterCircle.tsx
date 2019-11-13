@@ -1,10 +1,10 @@
 
 import React from 'react';
 import styles from "./CenterCircle.module.css";
-import DownChevron from "../../images/down-chevron.svg";
-import UpChevron from "../../images/up-chevron.svg";
-import LeftChevron from "../../images/left-chevron.svg";
-import RightChevron from "../../images/right-chevron.svg";
+import DownChevron from "../../../images/down-chevron.svg";
+import UpChevron from "../../../images/up-chevron.svg";
+import LeftChevron from "../../../images/left-chevron.svg";
+import RightChevron from "../../../images/right-chevron.svg";
 
 type CenterCircleProps = {
     handleSetActive: Function;

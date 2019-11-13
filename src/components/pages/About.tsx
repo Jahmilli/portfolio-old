@@ -17,9 +17,8 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
                 all areas of Information Technology.
                 <br /><br />
                 My biggest interests right now revolve around full-stack development and I really enjoy using React, Typescript as well as Java. I'm also extremely interested 
-                in devops. I find concepts drawn from devops such as Continuous Integration and Continuous Deployment (CICD) are fascinating and I have really enjoyed working 
-                on building pipelines to enable faster and more 
-efficient software development.
+                in devops. I find concepts drawn from devops such as Continuous Integration and Continuous Deployment (CICD) fascinating and I have really enjoyed working 
+                on building pipelines to enable faster and more efficient software development.
                 <br /><br />
                 Other things I am trying to get more active with include learning the piano and going to the gym. Hopefully at some point i'll begin cooking and learn a new
                 language but I can only be so hopeful.

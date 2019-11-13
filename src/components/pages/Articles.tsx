@@ -15,7 +15,7 @@ const Articles: React.FunctionComponent<ArticlesProps> = ({ position, handleSetI
             <ul>
                 <li>
                     <div className={styles.articleItem}>
-                        <a href="https://medium.com/@sebastian.southern/e7fe7d6d3684" target="_blank">Testing React Components with React Testing Library</a>
+                        <a href="https://medium.com/@sebastian.southern/an-introduction-to-testing-react-components-with-react-testing-library-e7fe7d6d3684" target="_blank">Testing React Components with React Testing Library</a>
                         <p>
                             This article is an introduction to testing React components with React Testing Library. It is the first article I have ever
                             written and is something I was quite happy with. It focuses on explaing how to test components from the mindset of a user whilst
