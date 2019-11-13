@@ -15,6 +15,22 @@ const App: React.FC = () => {
     left: styles.leftPage,
   });
 
+  const handleSetActive = React.useCallback((name: string) => {
+    setClasses({
+      ...classes,
+      [name]: getStyle(name, true)
+    });
+    setActiveKey(name);
+  }, [classes]);
+
+  const handleSetInactive = React.useCallback((name: string) => {
+    setClasses({
+      ...classes,
+      [name]: getStyle(name, false)
+    });
+    setActiveKey("");
+  }, [classes]);
+
   React.useEffect(() => {
     const handleKeyDown = (event: any) => {
       // Used to naviage back to home page on Escape
@@ -36,7 +52,7 @@ const App: React.FC = () => {
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [activeKey]);
+  }, [activeKey, handleSetActive, handleSetInactive]);
 
   const getStyle = (name: string, active: boolean) => {
     switch(name) {
@@ -47,22 +63,6 @@ const App: React.FC = () => {
     }
   }
 
-  const handleSetActive = (name: string) => {
-    setClasses({
-      ...classes,
-      [name]: getStyle(name, true)
-    });
-    console.log('setting active', name)
-    setActiveKey(name);
-  }
-
-  const handleSetInactive = (name: string) => {
-    setClasses({
-      ...classes,
-      [name]: getStyle(name, false)
-    });
-    setActiveKey("");
-  }
 
   return (
     <div className={styles.app}>

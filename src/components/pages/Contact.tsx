@@ -16,8 +16,8 @@ const Contact: React.FunctionComponent<ContactProps> = ({ position, handleSetIna
             <div>
                 <p>You can find me on any of the following platforms:</p>
                 <div className={styles.mediaLockup}>
-                    <a href="https://github.com/Jahmilli" target="_blank"><img src={GithubLogo} alt="Github Logo" /></a>
-                    <a href="https://www.linkedin.com/in/sebastian-southern-50b544126/" target="_blank"><img src={LinkedInLogo} alt="LinkedIn Logo" /></a> 
+                    <a href="https://github.com/Jahmilli" target="_blank" rel="noopener noreferrer"><img src={GithubLogo} alt="Github Logo" /></a>
+                    <a href="https://www.linkedin.com/in/sebastian-southern-50b544126/" target="_blank" rel="noopener noreferrer"><img src={LinkedInLogo} alt="LinkedIn Logo" /></a> 
                 </div>                
                 <p>
                     You can also contact me through the following:

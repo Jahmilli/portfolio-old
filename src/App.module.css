@@ -32,7 +32,6 @@
   background-color: white;
   -webkit-transition: all 1s; /* Safari prior 6.1 */
   transition: all 1s;
-  overflow: scroll;
 }
 
 .rightPageActive {
