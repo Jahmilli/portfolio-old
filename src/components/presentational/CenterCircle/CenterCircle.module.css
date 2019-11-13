@@ -1,0 +1,145 @@
+.outerCircle {
+    /* width: 35em;
+    height: 35em;
+    border: 10px dashed white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* transform: rotate(360d); */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+.centerCircleLockup {
+  background: #fff;
+  width: 30em;
+  height: 30em;
+  border-radius: 50%;
+  box-shadow: 0 5px 10px 2px;
+  padding: 20px;
+  text-align: center;
+  pointer-events: auto; /* Because we're using a modal */
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 33% 33% 33%;
+  align-items: center;
+  justify-items: center;
+}
+
+.logoLockup {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+.centerCircleLockup h1 {
+  margin: 0;
+  opacity: 0;
+  font-family: sans-serif;
+  animation: fadeIn 1s ease-in 0s;
+  animation-fill-mode: forwards
+}
+
+.centerCircleLockup p {
+  font-size: 24px;
+  margin: 0;
+}
+.centerCircleLockup img {
+  height: 2em;
+  width: 2em;
+  transition: transform 0.5s;
+  transform: scale(1);
+}
+.centerCircleLockup img:hover {
+  cursor: pointer;
+  transform: scale(1.25);
+}
+
+.top {
+  opacity: 0;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in 1s;
+  animation-fill-mode: forwards; 
+}
+
+.right {
+  opacity: 0;
+  grid-column-start: 3;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in 1.25s;
+  animation-fill-mode: forwards; 
+}
+
+.bottom {
+  opacity: 0;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in 1.5s;
+  animation-fill-mode: forwards; 
+}
+
+.left {
+  opacity: 0;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in 1.75s;
+  animation-fill-mode: forwards; 
+}
+
+
+@media screen and (max-width: 550px) {
+
+  .centerCircleLockup {
+    width: 20em;
+    height: 20em;
+  }
+  .centerCircleLockup h1 {
+    font-size: 24px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .centerCircleLockup p {
+    font-size: 16px;
+  }
+
+}
+
+@media screen and (max-width: 390px) {
+  .centerCircleLockup {
+    width: 15em;
+    height: 15em;
+  }
+  .centerCircleLockup h1 {
+    font-size: 16px;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .centerCircleLockup p {
+    font-size: 12px;
+  }
+  /* .centerCircleLockup */
+}

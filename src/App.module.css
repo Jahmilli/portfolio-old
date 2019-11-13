@@ -1,0 +1,76 @@
+.app {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.topPage {
+ 	position: absolute;
+	width: 100%;
+	top: -100%;
+	left: 0;
+  height: 100vh;
+  z-index: 100;
+  background-color: white;
+  -webkit-transition: all 1s; /* Safari prior 6.1 */
+  transition: all 1s;
+  overflow: scroll;
+}
+
+.topPageActive {
+  composes: topPage;
+  top: 0;
+}
+
+.rightPage {
+  position: absolute;
+	width: 100%;
+	top: 0;
+	left: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: white;
+  -webkit-transition: all 1s; /* Safari prior 6.1 */
+  transition: all 1s;
+}
+
+.rightPageActive {
+  composes: rightPage;
+  left: 0;
+}
+
+.bottomPage {
+  position: absolute;
+	width: 100%;
+	top: 100%;
+	left: 0;
+  height: 100vh;
+  z-index: 100;
+  background-color: white;
+  -webkit-transition: all 1s; /* Safari prior 6.1 */
+  transition: all 1s;
+  overflow: scroll;
+}
+
+.bottomPageActive {
+  composes: bottomPage;
+  top: 0;
+}
+
+.leftPage {
+  position: absolute;
+	width: 100%;
+	top: 0;
+	left: -100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: white;
+  -webkit-transition: all 1s; /* Safari prior 6.1 */
+  transition: all 1s;
+  overflow: scroll;
+}
+
+.leftPageActive {
+  composes: leftPage;
+  left: 0;
+}

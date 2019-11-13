@@ -1,0 +1,86 @@
+.lockup {
+  margin: 2.5% 20%;
+  background-color: white;
+  height: 100%;
+}
+
+.lockup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blogItem {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  height: 100vh;
+  z-index: 100;
+  background-color: white;
+  -webkit-transition: all 1s; /* Safari prior 6.1 */
+  transition: all 1s;
+  overflow-y: scroll;
+}
+.blogItemActive {
+  composes: blogItem;
+  left: 0%;
+  overflow: hidden;
+}
+
+
+@keyframes sidebarDisplay {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.blogItemLockup {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  /* display: grid; */
+  /* grid-template-columns: 10% 90%; */
+}
+
+/* .sidebar {
+  height: 100%;
+  width: 0%;
+  background-color: #eee;
+  overflow: hidden;
+  z-index: 500;  
+}
+
+.sidebarActive {
+  composes: sidebar;
+  animation: sidebarDisplay 1s linear 1s;
+  animation-fill-mode: forwards;
+}
+
+.sidebarActive img {
+  height: 1em;
+  width: 1em;
+} */
+
+.body {
+  padding: 5% 25%;
+  height: 100%;
+}
+
+.blogItemLockup img {
+  height: 1.5em;
+  width: 1.5em;
+  float: right;  
+  transform: scale(1);
+  transition: all 0.25s linear;
+}
+
+.blogItemLockup img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}

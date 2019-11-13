@@ -1,0 +1,17 @@
+.heading h1 {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.heading img {
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    transform: scale(1);
+    transition: transform 0.25s;
+}
+
+.heading img:hover {
+    cursor: pointer;
+    transform: scale(1.25);
+}

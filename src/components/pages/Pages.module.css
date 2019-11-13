@@ -1,0 +1,58 @@
+.lockup {
+  margin: 2.5% 20%;
+  background-color: white;
+  height: 100%;
+}
+
+.lockup ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.homePage {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-image: url("../../images/SeasideCliff.jpg");
+}
+
+.particles {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.mediaLockup {
+  
+}
+
+.mediaLockup img {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  padding: 0 1em 0 0;
+  transform: scale(1);
+  transition: all 0.25s linear;
+}
+
+.mediaLockup img:hover {
+  transform: scale(1.25);
+}
+
+.articleItem {
+
+}
+
+.articleItem a {
+  color: black;
+}
+
+
+@media screen and (max-width: 550px) {
+
+}
