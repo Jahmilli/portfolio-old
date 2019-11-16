@@ -101,6 +101,19 @@ const Projects: React.FunctionComponent<ProjectsProps> = ({ position, handleSetI
           ]}
           handleItemClick={handleItemClick}
         />
+        <ProjectPreview
+          title="CMatrix 2.0"
+          date="10/10/2019"
+          description="A C Application built as a fun project in the Fundamentals of C Class at UTS"
+          gitURL="https://github.com/JaydenL33/cmatrix2.0"
+          images={[
+            {
+              src: "https://seb-southern-portfolio.s3.ap-northeast-2.amazonaws.com/cmatrix-demo.png",
+              alt: "CMatrix Demo"
+            },
+          ]}
+          handleItemClick={handleItemClick}
+        />
       </div>
       <div className={projectItemState.title.length > 0 ? styles.projectItemActive : styles.projectItem}>
         <ProjectItem handleItemClick={handleItemInactiveClick} {...projectItemState} />
