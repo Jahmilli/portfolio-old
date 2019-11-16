@@ -1,0 +1,18 @@
+.lockup {
+  text-align: center;
+  padding: 1em;
+}
+
+.lockup:hover {
+background-color: #eee;
+cursor: pointer;
+}
+
+.lockup img {
+  height: 350px;
+  width: 200px;
+}
+
+.lockup p {
+  /* padding: 0 2em; */
+}

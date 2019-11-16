@@ -32,7 +32,7 @@ const CenterCircle: React.FunctionComponent<CenterCircleProps> = ({ handleSetAct
                 </div>
                 <div className={styles.left}>
                     <img src={LeftChevron} onClick={() => handleSetActive("left")} alt="Left Chevron" />
-                    <p>Contact </p>
+                    <p>Projects</p>
                 </div>
             </div>
         </div>

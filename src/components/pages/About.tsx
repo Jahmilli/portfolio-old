@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from "./Pages.module.css";
 import Title from '../presentational/Title/Title';
+import GithubLogo from "../../images/github-logo.svg";
+import LinkedInLogo from "../../images/linkedin-logo.svg";
 
 type AboutProps = {
     position: string;
@@ -16,7 +18,7 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
                 I am a full-time student and software engineer based in Sydney. I have a strong interest in learning all types of skills particularly in 
                 all areas of Information Technology.
                 <br /><br />
-                My biggest interests right now revolve around full-stack development and I really enjoy using React, Typescript as well as Java. I'm also extremely interested 
+                My biggest interests right now revolve around full-stack development where I really enjoy using React, Typescript as well as Java. I'm also extremely interested 
                 in devops. I find concepts drawn from devops such as Continuous Integration and Continuous Deployment (CICD) fascinating and I have really enjoyed working 
                 on building pipelines to enable faster and more efficient software development.
                 <br /><br />
@@ -25,14 +27,14 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
             </p>
             <h2>My Time at the Univeristy of Technology Sydney (UTS)</h2>
             <p>
-                I am currently a software engineering student at the University of Technology Sydney and started there in 2016 where I also began learning how to code,
-                beginning with HTML, CSS and Java. Through the early stages of university I primarily developed my skills in Java learning a range of software design 
-                patterns, principles and algorithms in subjects. Since then I have had the opportunity to build two Android applications (which can be found on my Github).
+                I am currently a software engineering student at the University of Technology Sydney having started there in 2016 where I also began learning how to code,
+                beginning with HTML, CSS and Java. Through the early stages of university I developed my skills primarily in Java learning a range of software design 
+                patterns, principles and algorithms in subjects. Since then I have had the opportunity to built two Android applications (which can be found on my Github).
                 <br /><br />
                 During my time at university, I have also had the opportunity to help establish the 'Professional Aeronautics & Astronautics Society' (PAAS) as 
                 vice-president for 2 years. PAAS is a society which aims to spark conversation and skill development into all matters related to Aerospace. 
-                This was something I was strongly passionate about as I believed that students deserved the opportunities to work together, meet other 
-                like-minded students and help develop their skills. 
+                This was something I was strongly passionate about as I believe that students deserved the opportunities to work together, meet other 
+                like-minded people and help develop their skills. 
                 <br /><br />
                 I also supported UTS Programmer's Society as Treasurer and then Secretary where during my time, we ran programming workshops, two hackathons, 
                 competitive programming competitions and the occasional meetup. I was really excited about this society as having the opportunity to help other 
@@ -45,8 +47,19 @@ const About: React.FunctionComponent<AboutProps> = ({ position, handleSetInactiv
                 Through this, I developed skills in Linux, AWS, Jenkins/Teamcity, Ansible, Terraform and a range of other tools/frameworks/languages. 
                 I also learned how to work with a development team understanding basics in enabling more efficient development practices. This also exposed 
                 me to working in a production environment, including developing release plans to take my team's applications to production, being "on-call" 
-                for production incidents, supporting a disaster recover exercise as well as overall development of applications and services that I took to production. 
+                for production incidents, supporting a disaster recovery exercise as well as overall development of applications and services that I took to production. 
             </p>
+            <h2>Contact</h2>
+                <p>You can find me on any of the following platforms:</p>
+                <div className={styles.mediaLockup}>
+                    <a href="https://github.com/Jahmilli" target="_blank" rel="noopener noreferrer"><img src={GithubLogo} alt="Github Logo" /></a>
+                    <a href="https://www.linkedin.com/in/sebastian-southern-50b544126/" target="_blank" rel="noopener noreferrer"><img src={LinkedInLogo} alt="LinkedIn Logo" /></a> 
+                </div>                
+                <p>
+                    You can also contact me through the following:
+                    <br /> 
+                    <strong>Email: </strong>sebastian.southern@gmail.com
+                </p>
         </div>
     );
 }

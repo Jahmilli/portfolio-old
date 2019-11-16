@@ -2,7 +2,7 @@ import React from 'react';
 import Home from './components/pages/Home';
 import Blog from "./components/pages/Blog/Blog";
 import About from './components/pages/About';
-import Contact from './components/pages/Contact';
+import Projects from './components/pages/Projects/Projects';
 import styles from "./App.module.css";
 import Articles from './components/pages/Articles';
 
@@ -77,7 +77,7 @@ const App: React.FC = () => {
         <About position="bottom" handleSetInactive={handleSetInactive} />
       </div>
       <div className={classes.left}>
-        <Contact position="left" handleSetInactive={handleSetInactive} />
+        <Projects position="left" handleSetInactive={handleSetInactive} />
       </div>
     </div>
   );
